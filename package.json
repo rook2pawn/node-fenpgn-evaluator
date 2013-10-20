@@ -1,0 +1,13 @@
+{
+  "name": "fenpgn-evaluator",
+  "description": "evaluation metrics",
+  "version": "0.0.1",
+  "main": "index.js",
+  "homepage": "https://github.com/rook2pawn/node-fenpgn-evaluator",
+  "author": "David Wee <rook2pawn@gmail.com> (rook2pawn.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rook2pawn/node-fenpgn-evaluator.git"
+  },
+  "license": "BSD-2-Clause"
+}
