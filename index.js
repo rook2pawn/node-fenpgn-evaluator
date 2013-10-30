@@ -1,11 +1,25 @@
 var pawnstructure = require('./lib/pawnstructure.js');
-var evaluation = function(b) {
-    var pawnresult = pawnstructure.analyze(b);
-    return {
-        pawnresult : pawnresult
-    }
+var development = require('./lib/development.js');
+var openings = require('./lib/openings/openings.js');
+/*
+var Fenpgn = require('fenpgn');
+var util = require('util');
+
+var log = function(obj) {
+    console.log(util.inspect(obj,{colors:true,depth:null}));
 };
-module.exports = exports = evaluation;
+var fen = new Fenpgn;
+openings.fulldev.forEach(function(move) {
+    console.log("move :" + move);
+    fen.mm(move);
+});
+
+*/
+
+exports.pawnstructure = pawnstructure.analyze;
+exports.development = development.development;
+
+
 /*
 var startboard = [
 ['1','1','1','1','1','1','1','1'],
@@ -17,5 +31,5 @@ var startboard = [
 ['1','1','1','1','1','1','1','1'],
 ['1','1','1','1','1','1','1','1']
 ];
-evaluation(startboard);
 */
+//var x = development(fen.getHistory());
