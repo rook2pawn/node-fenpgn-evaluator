@@ -14,3 +14,5 @@ var results = {};
 results.development = evaluator.development(fen.getHistory());
 results.material = evaluator.material(fen.last().board);
 results.pawnstructure = evaluator.pawnstructure(fen.last().board);
+results.kingsafety = evaluator.kingsafety(fen.last().board);
+log(results);

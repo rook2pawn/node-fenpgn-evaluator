@@ -5,6 +5,7 @@ evaluation is broken up into the following components
 
 * pawnstructure
 * development 
+* king safety
 
 pawnstructure
 -------------
@@ -17,6 +18,15 @@ development
 
 development takes a full game history and returns a the development
 progress.
+
+king safety
+-----------
+
+king safety takes a single board state and returns 
+
+* pawn shields (shields in front two rows)
+* pawn storm (upcoming)
+
 
 
 example time (development)
@@ -40,5 +50,6 @@ example time (development)
     results.development = evaluator.development(fen.getHistory());
     results.material = evaluator.material(fen.last().board);
     results.pawnstructure = evaluator.pawnstructure(fen.last().board);
+    results.kingsafety = evaluator.kingsafety(fen.last().board);
 
     log(results);
