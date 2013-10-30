@@ -10,5 +10,7 @@ openings.fulldev.forEach(function(move) {
     console.log("move :" + move);
     fen.mm(move);
 });
-var x = evaluator.development(fen.getHistory());
-log(x);
+var results = {};
+results.development = evaluator.development(fen.getHistory());
+results.material = evaluator.material(fen.last().board);
+results.pawnstructure = evaluator.pawnstructure(fen.last().board);
