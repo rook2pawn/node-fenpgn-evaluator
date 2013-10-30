@@ -29,8 +29,8 @@ king safety takes a single board state and returns
 
 
 
-example time (development)
---------------------------
+example time
+------------
 
     var openings = require('./lib/openings/openings.js');
     var evaluator = require('fenpgn-evaluator');
