@@ -27,6 +27,11 @@ king safety takes a single board state and returns
 * pawn shields (shields in front two rows)
 * pawn storm (upcoming)
 
+mobility
+--------
+
+mobility takes a single history item (board state plus metainformation) and 
+returns mobility information
 
 
 example time
@@ -51,5 +56,6 @@ example time
     results.material = evaluator.material(fen.last().board);
     results.pawnstructure = evaluator.pawnstructure(fen.last().board);
     results.kingsafety = evaluator.kingsafety(fen.last().board);
+    results.mobility = evaluator.mobility(fen.last());
 
     log(results);
