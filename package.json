@@ -10,7 +10,7 @@
     "url": "git://github.com/rook2pawn/node-fenpgn-evaluator.git"
   },
   "dependencies": {
-    "fenpgn": "",
+    "fenpgn": ""
   },
   "license": "BSD-2-Clause"
 }
